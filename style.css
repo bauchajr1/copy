@@ -1,0 +1,354 @@
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+.header{
+    display: flex;
+}
+.logo{
+    margin-left:15px ;
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 5px;
+    cursor: pointer;
+}
+ .menu{
+    margin-top: 13px;
+    position: absolute;
+    justify-content: space-evenly;
+    display: flex;
+    width: 55%;
+    font-size: 27px;
+    list-style: none; 
+    justify-items:center ; 
+    right: 5px;
+ }
+
+ .menu li a{
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+    color: gray;
+    font-variant: small-caps;
+ }
+
+.menu li :hover{
+    color: steelblue;
+    box-shadow: 1px 1px 1px black;
+}
+
+.section{
+    width: 100%;
+    height: 100vh;
+    background-image: url(b3.jpg);
+    background-size: cover;
+    background-position: bottom;
+    position: relative;
+}
+
+#section-text{
+    font-family: 'Courier New', Courier, monospace;
+    width: 55%;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    letter-spacing: 2px;
+    font-size: 20px;
+    color: grey;
+    cursor: pointer;
+}
+
+.section h1{
+    position: absolute;
+    color: steelblue;
+    top: 25%;
+    left: 10%;
+    cursor: pointer;
+}
+
+.section h2{
+    position: absolute;
+    color: rgb(99, 104, 109);
+    top: 37%;
+    left: 10%;
+    cursor: pointer;
+}
+
+
+.section a{
+    position: absolute;
+    top: 70%;
+    left: 20%;
+    font-size: 20px;
+    color: steelblue;
+    letter-spacing: 2px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.section a:hover{
+    box-shadow: 1px 1px 1px black;
+}
+
+.section2{
+    margin-top: 10px;
+    position: relative;
+    display: flex;
+    height: 80vh;
+}
+
+.about-images{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.about-images img{
+    width: 40%;
+    box-shadow: -10px 10px 25px grey;
+}
+
+.about{
+    width: 50%; 
+    text-align: right;
+}
+
+.about p,.content p{
+    font-size: 14px;
+    color: grey;
+    line-height: 25px;
+    letter-spacing: 2px;
+}
+.about h1{
+    font-size: 45px;
+    letter-spacing: 5px;
+    font-weight: 100;
+}
+.about span{
+    font-size: 30px;
+    color: steelblue;
+    font-weight: 500;
+}
+.about a,.section3 .collection .content a .unq-collection a{
+    font-size: 20px;
+    color: steelblue;
+    letter-spacing: 2px;
+    display: block;
+    margin-top: 30px;
+    margin-right: 250px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.section3{
+    padding: 5%;
+    background: whitesmoke;
+}
+
+.collection{
+    display: flex;
+    padding: 5% 0;
+}
+
+.content{
+    width:60%
+}
+
+.collection-image{
+    width: 40%;
+}
+
+.content p{
+    font-size: 14px;
+    color: grey;
+    line-height: 25px;
+    letter-spacing: 2px;
+}
+
+.section3 span{
+    font-size: 30px;
+    color: steelblue;
+    font-weight: 500;
+}
+
+.section3 h1{
+    font-size: 45px;
+    letter-spacing: 5px;
+    font-weight: 100;
+}
+
+.collection-image img{
+    box-shadow: 5px 5px 25px gray;
+}
+
+.about a,.section3 .collection .content a,.unq-collection a{
+    width: fit-content;
+}
+
+.about a:hover,.section3 .collection .content a:hover,.unq-collection a:hover{
+    box-shadow: 1px 1px 1px black;
+}
+
+.unq-collection{
+    display: flex;
+}
+
+.unq-collection .collection-image{
+    margin: 3%;
+    width: fit-content;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.section3 a{
+    text-decoration: none;
+    color: steelblue;
+    font-size: 20px;
+    padding: 2px;
+}
+
+.unq-collection .collection-image img{
+    margin-left: 20px;
+    width: 50%;
+}
+
+.section4 .left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    padding: 5px;
+    margin: 1%;
+    background-color: steelblue;
+    width: 50%;
+}
+
+
+.left h1{
+    color: white;
+    font-size: 48px;
+    line-height: 96px;
+    font-weight: 400;
+}
+
+.left h2{
+    color: palevioletred;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+
+.section5 h1{
+    font-size: 45px;
+    letter-spacing: 5px;
+    font-weight: 100;
+}
+
+.section5 span{
+    font-size: 30px;
+    color: steelblue;
+    font-weight: 500;
+}
+
+ .services{
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    margin: auto;
+    gap: 3%;
+    text-align: center;
+}
+
+.service{
+    cursor: pointer;
+    margin-left: 20px;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    line-height: 35px;
+}
+
+.service:hover{
+    box-shadow: 2px 3px 6px gray;
+    background: gray;
+    color: white;
+}
+
+.section6{
+    margin-top: 35px;
+    padding: 65px;
+    height: 90vh;
+    background-image: url(b6.jpg);
+    background-size: 100% auto;
+    background-position: center;
+}
+.section6 h1{
+    text-align: right;
+    font-size: 45px;
+    letter-spacing: 5px;
+    line-height: 95px;
+    font-weight: 100;
+}
+
+.section6 span{
+    color: steelblue;
+    font-weight: 500;
+}
+
+.clients{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.client{
+    background-color: rgba(245, 245, 245, 50%);
+    padding: 40px;
+    width: 48%;
+    text-align: center;
+    position: relative;
+}
+.client h3{
+    margin-top: 25px;
+    opacity: 100%;
+}
+
+.client img{
+    position: absolute;
+    top: -35px;
+    right: 55px;
+    height: 70px;
+    width: 70px;
+    border-radius: 100%;
+}
+
+.client p{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+footer{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding: 50px;
+}
+
+footer .icons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 35px;
+    cursor: pointer;
+    color: gray;
+}
+
+footer i{
+    cursor: pointer;
+    color: gray;
+}
